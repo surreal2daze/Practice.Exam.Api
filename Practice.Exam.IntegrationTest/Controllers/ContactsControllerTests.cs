@@ -55,8 +55,8 @@ namespace Practice.Exam.IntegrationTest.Controllers
 
             // Action
 
-            var resultd = await GetCallListAsync<List<Contact>>(
-                new CallListContactCommand { });
+            var resultd = await GetAllContactsAsync<List<Contact>>(
+                new GetAllContactsCommand { });
 
 
             // Assert
@@ -82,8 +82,8 @@ namespace Practice.Exam.IntegrationTest.Controllers
 
             // Action
             var result = await CreateContactAsync<ValidationResultModel>(request);
-            var resultd = await GetCallListAsync<List<Contact>>(
-                new CallListContactCommand { });
+            var resultd = await GetAllContactsAsync<List<Contact>>(
+                new GetAllContactsCommand { });
 
             // Assert
             result.ErrorMessage.ShouldBeNull(Resources.Validation_Failed);
@@ -160,8 +160,8 @@ namespace Practice.Exam.IntegrationTest.Controllers
             var resultd = await DeleteContactAsync<ValidationResultModel>(1);
 
 
-            var resultsd = await GetCallListAsync<List<Contact>>(
-                new CallListContactCommand { });
+            var resultsd = await GetAllContactsAsync<List<Contact>>(
+                new GetAllContactsCommand { });
 
             // Assert
             result.ErrorMessage.ShouldBeNull(Resources.Validation_Failed);

@@ -49,7 +49,7 @@ namespace Practice.Exam.Api.Controllers.Contacts
             SendAsync(request);
 
         [HttpGet("call-list")]
-        [ProducesResponseType(typeof(List<Contact>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(List<CallList>), (int)HttpStatusCode.OK)]
         public Task<IActionResult> CallList([FromQuery] CallListContactCommand request) =>
             SendAsync(request);
     }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Practice.Exam.Shared.Model.Contact.Command
 {
-    public class CallListContactCommand : IRequest<CommandResult<List<Contact>>>
+    public class CallListContactCommand : IRequest<CommandResult<List<CallList>>>
     {
     }
 }
