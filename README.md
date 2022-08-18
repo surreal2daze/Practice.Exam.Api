@@ -20,10 +20,10 @@ The repository is divided by folder
 * **4 -API** this will handle all the api request. The api can be viewed in swagger page
 * **5 -Testing** this is the location for all testing done for the repo "current testing applied is integration testing" mocking the database
 
-**The repo apply the mediator pattern and uses the mediatr package by Jimmy Bogard see this link https://github.com/jbogard/MediatR **
-**The following libraries supported this repo are:**
-*Shouldly* this is used to simplify the testing
-*Automapper* this will map object to object
-*FluentValidation* this is used for model and request validation before going to the business logic
-*Mediatr* this used to process messaging with no dependency supports request and response from the API request up to the database transaction
+*The repo apply the mediator pattern and uses the mediatr package by Jimmy Bogard see this link https://github.com/jbogard/MediatR*
+* **The following libraries supported this repo are:**
+*  **Shouldly* this is used to simplify the testing**
+* **Automapper* this will map object to object**
+* **FluentValidation* this is used for model and request validation before going to the business logic**
+* **Mediatr* this used to process messaging with no dependency supports request and response from the API request up to the database transaction**
 ##
